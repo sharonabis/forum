@@ -1,6 +1,37 @@
+$grey-color: #b2bac2;
+$blue-light: #397cac;
+$text-color: #717476;
+
+
 body {
 	font-family: 'Roboto', sans-serif;
 	background: #EDEFF0;
+	color:$text-color;
+}
+h1 {
+	font-weight: 100;
+	color: $blue-light;
+	font-size:27px;
+}
+	textarea {
+	margin: 10px 0;
+	overflow: auto;
+	width: 100%;
+	border: 1px solid $grey-color;
+	border-radius: none; 
+}
+
+input[type="text"] {
+	width: 100%;
+}
+
+input[type="submit"] {
+	background: $blue-light;
+	border-radius: 0.5rem;
+	border: none;
+	color: #fff;
+	margin-top: 10px;
+	padding: 10px;
 }
 
 .wrapper {
@@ -22,6 +53,10 @@ body {
 	margin: 0 auto;
 	#logo {
 		float: left;
+		a {
+			text-decoration: none;
+			color: $blue-light;
+		}
 	}
 	p {
 		text-transform: uppercase;
@@ -36,7 +71,7 @@ body {
 		a {
 			color: #fff;
 			text-decoration: none;
-			background: #397cac;
+			background: $blue-light;
 			padding: 0.5em 1em;
 			border-radius: 0.2em;
 			font-weight: 100;
@@ -51,8 +86,11 @@ body {
 	border-radius: 0.5em;
 	.post {
 		border-bottom: 1px solid #D1d1d1;
+		&:last-child {
+			border-bottom: none;
+		}
 		a {
-			color: #397cac;
+			color: $blue-light;
 			text-decoration: none;
 			font-weight: 100;
 			font-size: 1.25rem;
@@ -74,10 +112,14 @@ body {
 	border-radius: 0.5em;
 	h2 {
 		font-weight: 100;
-		color: #397cac;
+		color: $blue-light;
 	}
 	p {
 		line-height: 25px; 
 	}
 }
+
+
+
+
 
